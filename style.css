@@ -76,3 +76,35 @@ footer {
 hr {
   border: 1px solid black;
 }
+
+/* container class for 2 sections using flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+}
+
+/* container for the portfolio section that makes sure the items are aligned correctly and there's a gap between the sections with flexbox */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  column-gap: 10px;
+}
+
+/* class that let me align the text in one section of the bio without affecting other sections */
+.align-left {
+  text-align: left;
+}
+
+/* selector to be able to change the font size for the paragraphs in the portfolio section as requirements stated */
+.portfolio-container p {
+  font-size: 14px;
+}
+
+/* Selector to make a small change to the margins of the portfolio flexbox container so that the items could align at the start and the text would line up evenly */
+.portfolio-container div {
+  margin: 0;
+}

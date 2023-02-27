@@ -13,7 +13,8 @@
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <!-- created a class for the header to be able to have all the items horizontally aligned with good spacing -->
+    <header class="container">
       <h1>Pete Thinkful | Artist</h1>
       <nav>
         <a href="#about">About</a>
@@ -27,26 +28,30 @@
         <!-- About section -->
         <article id="about">
           <h2>About</h2>
-          <section>
-            <h3>Hi! I'm Pete Thinkful</h3>
+          <!-- added a class for the flexbox container to be able to visually align the items horizontally -->
+          <section class="container">
             <div>
               <img
-                class="image-circle"
-                src="images/pete-thinkful.png"
-                alt="Pete Thinkful"
-              />
+                  class="image-circle"
+                  src="images/pete-thinkful.png"
+                  alt="Pete Thinkful"
+                />
             </div>
-            <p>I'm an artist living in Denver, Colorado.</p>
-            <p>As an artist, I'm interested in:</p>
-            <ul>
-              <li>Producing abstract art</li>
-              <li>Creating street graffiti art</li>
-              <li>Connecting with like-minded artists</li>
-            </ul>
-            <p>
+            <!-- needed to add class align-left here so that I could make sure the text in this section of the flexbox container would align left, but everything else would be centered -->
+            <div class="align-left">
+              <h3>Hi! I'm Pete Thinkful</h3>
+              <p>I'm an artist living in Denver, Colorado.</p>
+              <p>As an artist, I'm interested in:</p>
+                <ul>
+                  <li>Producing abstract art</li>
+                  <li>Creating street graffiti art</li>
+                  <li>Connecting with like-minded artists</li>
+                </ul>
+              <p>
               Please feel free to take a look at my website and feel free to
               <a href="#contact">contact me</a>.
-            </p>
+              </p>
+            </div>
           </section>
 
           <section>
@@ -69,37 +74,35 @@
         <!-- Portfolio section -->
         <article id="portfolio">
           <h2>Portfolio</h2>
-          <section>
-            <h3>Abstract Red</h3>
+          <!-- created a class for the portfolio flexbox CSS changes -->
+          <section class="portfolio-container">
             <div>
+              <h3>Abstract Red</h3>
               <img src="images/abstract-red.png" alt="Abstract Red" />
+              <!-- need to use a CSS selector in the external sheet to have the font size be 14px for all <p> in this section -->
+              <p>
+                Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
+                waistcoat scenester hell of.
+              </p>
             </div>
-            <p>
-              Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
-              waistcoat scenester hell of.
-            </p>
-          </section>
 
-          <section>
-            <h3>Spiral Zany</h3>
             <div>
+              <h3>Spiral Zany</h3>
               <img src="images/spiral-zany.png" alt="Spiral Zany" />
+              <p>
+                Sriracha portland taxidermy cronut messenger bag, vegan
+                distillery. Vaporware kickstarter air plant mumblecore food truck.
+              </p>
             </div>
-            <p>
-              Sriracha portland taxidermy cronut messenger bag, vegan
-              distillery. Vaporware kickstarter air plant mumblecore food truck.
-            </p>
-          </section>
 
-          <section>
-            <h3>Melted Rainbow</h3>
             <div>
+              <h3>Melted Rainbow</h3>
               <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
+              <p>
+                Edison bulb single-origin coffee snackwave, actually ennui
+                locavore shabby chic forage.
+              </p>
             </div>
-            <p>
-              Edison bulb single-origin coffee snackwave, actually ennui
-              locavore shabby chic forage.
-            </p>
           </section>
         </article>
 
